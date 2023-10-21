@@ -13,6 +13,9 @@
 		C17E1FE92AE3B38A000FE915 /* CashboxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FE82AE3B38A000FE915 /* CashboxModel.swift */; };
 		C17E1FEC2AE3B5DD000FE915 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FEB2AE3B5DD000FE915 /* Session.swift */; };
 		C17E1FEE2AE3B82F000FE915 /* DebtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FED2AE3B82F000FE915 /* DebtModel.swift */; };
+		C17E1FF02AE3E2D2000FE915 /* CustomerDebtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FEF2AE3E2D2000FE915 /* CustomerDebtModel.swift */; };
+		C17E1FF32AE40092000FE915 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FF22AE40092000FE915 /* AddViewController.swift */; };
+		C17E1FF52AE400A8000FE915 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FF42AE400A8000FE915 /* AddViewModel.swift */; };
 		C1DCF5D92AE2D731008D1A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF5D82AE2D731008D1A84 /* AppDelegate.swift */; };
 		C1DCF5DB2AE2D731008D1A84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF5DA2AE2D731008D1A84 /* SceneDelegate.swift */; };
 		C1DCF5DD2AE2D731008D1A84 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF5DC2AE2D731008D1A84 /* CustomTabBarController.swift */; };
@@ -40,6 +43,9 @@
 		C17E1FE82AE3B38A000FE915 /* CashboxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashboxModel.swift; sourceTree = "<group>"; };
 		C17E1FEB2AE3B5DD000FE915 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		C17E1FED2AE3B82F000FE915 /* DebtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtModel.swift; sourceTree = "<group>"; };
+		C17E1FEF2AE3E2D2000FE915 /* CustomerDebtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDebtModel.swift; sourceTree = "<group>"; };
+		C17E1FF22AE40092000FE915 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		C17E1FF42AE400A8000FE915 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		C1DCF5D52AE2D731008D1A84 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DCF5D82AE2D731008D1A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1DCF5DA2AE2D731008D1A84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,13 @@
 				C17E1FEB2AE3B5DD000FE915 /* Session.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		C17E1FF12AE3FF7A000FE915 /* Userdefault */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Userdefault;
 			sourceTree = "<group>";
 		};
 		C1DCF5CC2AE2D731008D1A84 = {
@@ -194,6 +207,7 @@
 		C1DCF5F22AE2E2F2008D1A84 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C17E1FF12AE3FF7A000FE915 /* Userdefault */,
 				C17E1FEA2AE3B5D3000FE915 /* Session */,
 			);
 			path = Data;
@@ -261,6 +275,7 @@
 		C1DCF5FA2AE2E4AE008D1A84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C17E1FEF2AE3E2D2000FE915 /* CustomerDebtModel.swift */,
 				C17E1FED2AE3B82F000FE915 /* DebtModel.swift */,
 			);
 			path = Model;
@@ -308,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				C1DCF61D2AE2EE16008D1A84 /* CustomersViewModel.swift */,
+				C17E1FF42AE400A8000FE915 /* AddViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -316,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				C1DCF6152AE2EA80008D1A84 /* CustomersViewController.swift */,
+				C17E1FF22AE40092000FE915 /* AddViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -441,6 +458,8 @@
 			files = (
 				C17E1FE62AE3A426000FE915 /* BaseTableViewCell.swift in Sources */,
 				C1DCF6142AE2EA4E008D1A84 /* DebtViewController.swift in Sources */,
+				C17E1FF32AE40092000FE915 /* AddViewController.swift in Sources */,
+				C17E1FF52AE400A8000FE915 /* AddViewModel.swift in Sources */,
 				C1DCF6222AE2EE7E008D1A84 /* CustomerModel.swift in Sources */,
 				C1DCF5DD2AE2D731008D1A84 /* CustomTabBarController.swift in Sources */,
 				C1DCF6182AE2EAA6008D1A84 /* SettingsViewController.swift in Sources */,
@@ -457,6 +476,7 @@
 				C1DCF61E2AE2EE16008D1A84 /* CustomersViewModel.swift in Sources */,
 				C1DCF6162AE2EA80008D1A84 /* CustomersViewController.swift in Sources */,
 				C1DCF6122AE2E5F4008D1A84 /* CashboxViewController.swift in Sources */,
+				C17E1FF02AE3E2D2000FE915 /* CustomerDebtModel.swift in Sources */,
 				C17E1FEE2AE3B82F000FE915 /* DebtModel.swift in Sources */,
 				C1DCF61A2AE2ED21008D1A84 /* CashboxViewModel.swift in Sources */,
 				C1DCF60E2AE2E56C008D1A84 /* CircleAnimationKit.swift in Sources */,

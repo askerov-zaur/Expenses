@@ -22,8 +22,10 @@ class CashboxTableCell: BaseTableViewCell {
        let view = UIView()
         view.layer.cornerRadius = 20
         view.backgroundColor = .white
-        view.layer.shadowOffset = CGSize(width: 2, height: 2)
-        view.layer.shadowOpacity = 5
+        view.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 0)
+        view.layer.shadowOpacity = 1
+        view.layer.shadowRadius = 10
         return view
     }()
     
@@ -47,14 +49,20 @@ class CashboxTableCell: BaseTableViewCell {
     
     override func setupCell() {
         contentView.anchor(view: backgroundListView) { kit in
-            kit.top(8)
-            kit.bottom(8)
+            kit.top(15)
+            kit.bottom(15)
             kit.leading(16)
             kit.trailing(16)
             
             anchor(view: amountLabel) { kit in
                 kit.trailing(34)
-                kit.top(centerYAnchor)
+                kit.centerY()
+                kit.height(18)
+            }
+            
+            anchor(view: dateLabel) { kit in
+                kit.leading(32)
+                kit.centerY()
                 kit.height(18)
             }
         }

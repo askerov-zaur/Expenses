@@ -7,12 +7,11 @@
 
 import Foundation
 
-struct DebtModel {
+struct DebtModel: Codable {
     
-    let customer: CustomerModel
     let currency: String
     let amount: Double
-    let totalAmount: Double
     let note: String
+    let totalAmount: Double
     
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CashboxModel {
+struct CashboxModel: Codable  {
     
     let currency: String
     let date: String

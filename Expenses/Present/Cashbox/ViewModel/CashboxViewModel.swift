@@ -9,7 +9,7 @@ import UIKit
 
 class CashboxViewModel {
     
-    let session: Session()
+    let session = Session.shared
     
     
 }

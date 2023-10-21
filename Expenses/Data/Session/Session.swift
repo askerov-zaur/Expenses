@@ -12,6 +12,21 @@ class Session {
     private init() {}
     static let shared = Session()
     
-    private var CustomerDetail: [CashboxModel] = []
+    private var cashDetails: [CashboxModel] = [
+        CashboxModel(currency: "AZN", date: "16.06", amount: 12.2, totalAmount: 22),
+        CashboxModel(currency: "AZN", date: "16.06", amount: 12.2, totalAmount: 22),
+        CashboxModel(currency: "AZN", date: "16.06", amount: 12.2, totalAmount: 22),
+    ]
     
 }
+
+//for read
+extension Session {
+    
+    var detail: [CashboxModel] {
+        return cashDetails
+    }
+    
+}
+
+//for set
