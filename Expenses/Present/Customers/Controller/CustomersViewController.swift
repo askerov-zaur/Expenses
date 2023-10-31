@@ -9,63 +9,72 @@ import UIKit
 
 class CustomersViewController: UIViewController {
     
+    private let viewModel: CustomersViewModel = {
+        let model = CustomersViewModel(session: .shared)
+        return model
+    }()
+    
     private lazy var table: UITableView = {
         let table = UITableView()
+        table.separatorStyle = .none
+        table.allowsSelection = false
         table.delegate = self
         table.dataSource = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.description())
+        table.register(CustomerTableCell.self, forCellReuseIdentifier: CustomerTableCell.description())
+        table.backgroundColor = UIColor(red: 0.973, green: 0.973, blue: 0.973, alpha: 1)
         return table
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        setupView()
-        a()
+        configVC()
+        setupTable()
     }
     
-    private func setupView() {
+    private func configVC() {
         title = "Müştərilər"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.backButtonTitle = ""
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
     }
     
     @objc func didTapAdd() {
-        let vc = AddViewController()
-        let nc = UINavigationController(rootViewController: vc)
-        if let sheet = nc.sheetPresentationController {
-            sheet.detents = [.custom(resolver: { context in
-                return 300
-            })]
-            sheet.preferredCornerRadius = 20
-        }
-        present(nc, animated: true)
+        let vc = AddCustomerViewController()
+        vc.viewModel.delegate = self
+        vc.hidesBottomBarWhenPushed = true
+        show(vc, sender: nil)
     }
     
-    func a() {
-        view.inputViewController?.modalPresentationStyle = .formSheet
-        let sheet = view.inputViewController?.sheetPresentationController
-        let multiplier = 0.25
-        let fraction = UISheetPresentationController.Detent.custom { context in
-            self.view.frame.height * multiplier
+    private func setupTable() {
+        view.anchor(view: table) { kit in
+            kit.leading()
+            kit.trailing()
+            kit.top(16,safe: true)
+            kit.bottom()
         }
-        sheet?.detents = [fraction]
     }
-
-    
 }
 
 extension CustomersViewController: TableViewDelegete {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        viewModel.getData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        guard let cell = table.dequeueReusableCell(withIdentifier: CustomerTableCell.description(), for: indexPath) as? CustomerTableCell else {return UITableViewCell()}
+        cell.item = viewModel.getData[indexPath.row]
+                return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        70
+        90
+    }
+}
+
+extension CustomersViewController: AddDelegate {
+    func reload() {
+        table.reloadData()
     }
 }

@@ -9,23 +9,18 @@ import UIKit
 
 class CashboxTableCell: BaseTableViewCell {
     
-    var item: CashboxModel? {
+    var item: CashboxData? {
         didSet {
             guard let item = item else {return}
             amountLabel.text = "\(item.amount)"
-            currencyLabel.text = item.currency
-            dateLabel.text = item.date
+            dateLabel.text = item.date.description
+            hourLabel.text = item.hour.description
         }
     }
     
     private let backgroundListView: UIView = {
        let view = UIView()
-        view.layer.cornerRadius = 20
         view.backgroundColor = .white
-        view.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
-        view.layer.shadowOffset = CGSize(width: 0, height: 0)
-        view.layer.shadowOpacity = 1
-        view.layer.shadowRadius = 10
         return view
     }()
     
@@ -37,32 +32,39 @@ class CashboxTableCell: BaseTableViewCell {
     
     private let dateLabel: UILabel = {
        let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .medium)
+        label.font = .systemFont(ofSize: 16, weight: .regular)
         return label
     }()
     
-    private let currencyLabel: UILabel = {
+    private let hourLabel: UILabel = {
        let label = UILabel()
         label.font = .systemFont(ofSize: 16, weight: .medium)
+        label.textColor = .subColor
+        label.text = "12:67"
         return label
     }()
     
     override func setupCell() {
         contentView.anchor(view: backgroundListView) { kit in
-            kit.top(15)
-            kit.bottom(15)
-            kit.leading(16)
-            kit.trailing(16)
+            kit.top(0)
+            kit.bottom(0)
+            kit.leading(0)
+            kit.trailing(0)
             
-            anchor(view: amountLabel) { kit in
-                kit.trailing(34)
+            backgroundListView.anchor(view: amountLabel) { kit in
+                kit.trailing(20)
                 kit.centerY()
                 kit.height(18)
             }
             
-            anchor(view: dateLabel) { kit in
-                kit.leading(32)
-                kit.centerY()
+            backgroundListView.anchor(view: dateLabel) { kit in
+                kit.leading(20)
+                kit.centerY(-10)
+                kit.height(18)
+            }
+            backgroundListView.anchor(view: hourLabel) { kit in
+                kit.leading(20)
+                kit.centerY(10)
                 kit.height(18)
             }
         }

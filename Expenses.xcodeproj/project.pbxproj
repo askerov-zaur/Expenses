@@ -13,18 +13,20 @@
 		C17E1FE92AE3B38A000FE915 /* CashboxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FE82AE3B38A000FE915 /* CashboxModel.swift */; };
 		C17E1FEC2AE3B5DD000FE915 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FEB2AE3B5DD000FE915 /* Session.swift */; };
 		C17E1FEE2AE3B82F000FE915 /* DebtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FED2AE3B82F000FE915 /* DebtModel.swift */; };
-		C17E1FF02AE3E2D2000FE915 /* CustomerDebtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FEF2AE3E2D2000FE915 /* CustomerDebtModel.swift */; };
-		C17E1FF32AE40092000FE915 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FF22AE40092000FE915 /* AddViewController.swift */; };
-		C17E1FF52AE400A8000FE915 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FF42AE400A8000FE915 /* AddViewModel.swift */; };
+		C17E1FF32AE40092000FE915 /* AddCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FF22AE40092000FE915 /* AddCustomerViewController.swift */; };
+		C17E1FF52AE400A8000FE915 /* AddCustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1FF42AE400A8000FE915 /* AddCustomerViewModel.swift */; };
+		C184C7DD2AEE4CC000153BD9 /* CashboxTotalAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184C7DC2AEE4CC000153BD9 /* CashboxTotalAmountView.swift */; };
+		C1A705392AE8FF8300903CA7 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A705382AE8FF8300903CA7 /* UIView+Ext.swift */; };
+		C1A7053C2AE926D500903CA7 /* DebtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7053B2AE926D500903CA7 /* DebtDetailViewController.swift */; };
+		C1A7053E2AE926E700903CA7 /* DebtDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7053D2AE926E700903CA7 /* DebtDetailViewModel.swift */; };
+		C1A705402AE927B300903CA7 /* DebtDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7053F2AE927B300903CA7 /* DebtDetailTableCell.swift */; };
+		C1A705422AE92AF800903CA7 /* DebtDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A705412AE92AF800903CA7 /* DebtDetailModel.swift */; };
+		C1A705462AE945BE00903CA7 /* DebtDetailTableFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A705452AE945BE00903CA7 /* DebtDetailTableFooter.swift */; };
 		C1DCF5D92AE2D731008D1A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF5D82AE2D731008D1A84 /* AppDelegate.swift */; };
 		C1DCF5DB2AE2D731008D1A84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF5DA2AE2D731008D1A84 /* SceneDelegate.swift */; };
 		C1DCF5DD2AE2D731008D1A84 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF5DC2AE2D731008D1A84 /* CustomTabBarController.swift */; };
 		C1DCF5E22AE2D732008D1A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DCF5E12AE2D732008D1A84 /* Assets.xcassets */; };
 		C1DCF5E52AE2D732008D1A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DCF5E32AE2D732008D1A84 /* LaunchScreen.storyboard */; };
-		C1DCF60D2AE2E56C008D1A84 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF6092AE2E56C008D1A84 /* UIStackView.swift */; };
-		C1DCF60E2AE2E56C008D1A84 /* CircleAnimationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF60A2AE2E56C008D1A84 /* CircleAnimationKit.swift */; };
-		C1DCF60F2AE2E56C008D1A84 /* AnchorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF60B2AE2E56C008D1A84 /* AnchorKit.swift */; };
-		C1DCF6102AE2E56C008D1A84 /* UIView+Stacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF60C2AE2E56C008D1A84 /* UIView+Stacking.swift */; };
 		C1DCF6122AE2E5F4008D1A84 /* CashboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF6112AE2E5F4008D1A84 /* CashboxViewController.swift */; };
 		C1DCF6142AE2EA4E008D1A84 /* DebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF6132AE2EA4E008D1A84 /* DebtViewController.swift */; };
 		C1DCF6162AE2EA80008D1A84 /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF6152AE2EA80008D1A84 /* CustomersViewController.swift */; };
@@ -33,7 +35,24 @@
 		C1DCF61C2AE2EDF7008D1A84 /* DebtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF61B2AE2EDF7008D1A84 /* DebtViewModel.swift */; };
 		C1DCF61E2AE2EE16008D1A84 /* CustomersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF61D2AE2EE16008D1A84 /* CustomersViewModel.swift */; };
 		C1DCF6202AE2EE32008D1A84 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF61F2AE2EE32008D1A84 /* SettingsViewModel.swift */; };
-		C1DCF6222AE2EE7E008D1A84 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF6212AE2EE7E008D1A84 /* CustomerModel.swift */; };
+		C1E188B92AED013200E50887 /* UIView+Stacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF60C2AE2E56C008D1A84 /* UIView+Stacking.swift */; };
+		C1E188BA2AED013200E50887 /* CircleAnimationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF60A2AE2E56C008D1A84 /* CircleAnimationKit.swift */; };
+		C1E188BB2AED013200E50887 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF6092AE2E56C008D1A84 /* UIStackView.swift */; };
+		C1E188BC2AED013200E50887 /* AnchorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCF60B2AE2E56C008D1A84 /* AnchorKit.swift */; };
+		C1E188BE2AED07D700E50887 /* CashboxDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E188BD2AED07D700E50887 /* CashboxDataModel.swift */; };
+		C1F6CE342AE7E84E00D18D76 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6CE332AE7E84E00D18D76 /* UIImage+Ext.swift */; };
+		C1F6CE362AE7EDA900D18D76 /* DebtTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6CE352AE7EDA900D18D76 /* DebtTableCell.swift */; };
+		C1F94A502AE817C1001D6925 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F94A4F2AE817C1001D6925 /* CustomerModel.swift */; };
+		C1F94A542AE82396001D6925 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F94A532AE82396001D6925 /* CustomTextField.swift */; };
+		C1F94A562AE823C4001D6925 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F94A552AE823C4001D6925 /* BaseView.swift */; };
+		C1F94A582AE8468D001D6925 /* SettingsTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F94A572AE8468D001D6925 /* SettingsTableHeader.swift */; };
+		C1F94A5A2AE847C4001D6925 /* SettingsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F94A592AE847C4001D6925 /* SettingsTableCell.swift */; };
+		C1F94A5C2AE84B14001D6925 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F94A5B2AE84B14001D6925 /* SettingsModel.swift */; };
+		C1FB7CB22AE66033005A1A45 /* CustomerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB7CB12AE66033005A1A45 /* CustomerTableCell.swift */; };
+		C1FB7CB72AE6659F005A1A45 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB7CB62AE6659F005A1A45 /* UIColor+Ext.swift */; };
+		C1FB7CB92AE69034005A1A45 /* AddDebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB7CB82AE69034005A1A45 /* AddDebtViewController.swift */; };
+		C1FB7CBB2AE6907B005A1A45 /* AddDebtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB7CBA2AE6907B005A1A45 /* AddDebtViewModel.swift */; };
+		C1FB7CBE2AE6A054005A1A45 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB7CBD2AE6A054005A1A45 /* UITextField+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +62,15 @@
 		C17E1FE82AE3B38A000FE915 /* CashboxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashboxModel.swift; sourceTree = "<group>"; };
 		C17E1FEB2AE3B5DD000FE915 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		C17E1FED2AE3B82F000FE915 /* DebtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtModel.swift; sourceTree = "<group>"; };
-		C17E1FEF2AE3E2D2000FE915 /* CustomerDebtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDebtModel.swift; sourceTree = "<group>"; };
-		C17E1FF22AE40092000FE915 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		C17E1FF42AE400A8000FE915 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
+		C17E1FF22AE40092000FE915 /* AddCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewController.swift; sourceTree = "<group>"; };
+		C17E1FF42AE400A8000FE915 /* AddCustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewModel.swift; sourceTree = "<group>"; };
+		C184C7DC2AEE4CC000153BD9 /* CashboxTotalAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashboxTotalAmountView.swift; sourceTree = "<group>"; };
+		C1A705382AE8FF8300903CA7 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		C1A7053B2AE926D500903CA7 /* DebtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtDetailViewController.swift; sourceTree = "<group>"; };
+		C1A7053D2AE926E700903CA7 /* DebtDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtDetailViewModel.swift; sourceTree = "<group>"; };
+		C1A7053F2AE927B300903CA7 /* DebtDetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtDetailTableCell.swift; sourceTree = "<group>"; };
+		C1A705412AE92AF800903CA7 /* DebtDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtDetailModel.swift; sourceTree = "<group>"; };
+		C1A705452AE945BE00903CA7 /* DebtDetailTableFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtDetailTableFooter.swift; sourceTree = "<group>"; };
 		C1DCF5D52AE2D731008D1A84 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DCF5D82AE2D731008D1A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1DCF5DA2AE2D731008D1A84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +90,20 @@
 		C1DCF61B2AE2EDF7008D1A84 /* DebtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtViewModel.swift; sourceTree = "<group>"; };
 		C1DCF61D2AE2EE16008D1A84 /* CustomersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersViewModel.swift; sourceTree = "<group>"; };
 		C1DCF61F2AE2EE32008D1A84 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		C1DCF6212AE2EE7E008D1A84 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
+		C1E188BD2AED07D700E50887 /* CashboxDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashboxDataModel.swift; sourceTree = "<group>"; };
+		C1F6CE332AE7E84E00D18D76 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		C1F6CE352AE7EDA900D18D76 /* DebtTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtTableCell.swift; sourceTree = "<group>"; };
+		C1F94A4F2AE817C1001D6925 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
+		C1F94A532AE82396001D6925 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		C1F94A552AE823C4001D6925 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C1F94A572AE8468D001D6925 /* SettingsTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableHeader.swift; sourceTree = "<group>"; };
+		C1F94A592AE847C4001D6925 /* SettingsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableCell.swift; sourceTree = "<group>"; };
+		C1F94A5B2AE84B14001D6925 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		C1FB7CB12AE66033005A1A45 /* CustomerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableCell.swift; sourceTree = "<group>"; };
+		C1FB7CB62AE6659F005A1A45 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		C1FB7CB82AE69034005A1A45 /* AddDebtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDebtViewController.swift; sourceTree = "<group>"; };
+		C1FB7CBA2AE6907B005A1A45 /* AddDebtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDebtViewModel.swift; sourceTree = "<group>"; };
+		C1FB7CBD2AE6A054005A1A45 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +125,6 @@
 			path = Typealians;
 			sourceTree = "<group>";
 		};
-		C17E1FE02AE3A373000FE915 /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				C17E1FE32AE3A3B4000FE915 /* CashboxTableCell.swift */,
-			);
-			path = TableViewCell;
-			sourceTree = "<group>";
-		};
 		C17E1FEA2AE3B5D3000FE915 /* Session */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +138,14 @@
 			children = (
 			);
 			path = Userdefault;
+			sourceTree = "<group>";
+		};
+		C1A7053A2AE8FF8900903CA7 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C1A705382AE8FF8300903CA7 /* UIView+Ext.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		C1DCF5CC2AE2D731008D1A84 = {
@@ -151,6 +189,7 @@
 		C1DCF5ED2AE2D84E008D1A84 /* Present */ = {
 			isa = PBXGroup;
 			children = (
+				C1DCF5F52AE2E3E5008D1A84 /* Base */,
 				C1DCF5EE2AE2E1B6008D1A84 /* Cashbox */,
 				C1DCF5F12AE2E270008D1A84 /* Debts */,
 				C1DCF5F02AE2E1FB008D1A84 /* Customers */,
@@ -216,8 +255,8 @@
 		C1DCF5F32AE2E32B008D1A84 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C1F94A522AE82389001D6925 /* Custom */,
 				C1DCF6062AE2E505008D1A84 /* Helpers */,
-				C1DCF5F52AE2E3E5008D1A84 /* Base */,
 				C1DCF5F42AE2E3A2008D1A84 /* Extension */,
 			);
 			path = Components;
@@ -226,6 +265,10 @@
 		C1DCF5F42AE2E3A2008D1A84 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C1A7053A2AE8FF8900903CA7 /* UIView */,
+				C1F6CE322AE7E84300D18D76 /* Image */,
+				C1FB7CBC2AE6A033005A1A45 /* UITextField */,
+				C1FB7CB32AE66582005A1A45 /* UIColor */,
 				C17E1FDB2AE3A0A0000FE915 /* Typealians */,
 			);
 			path = Extension;
@@ -234,8 +277,10 @@
 		C1DCF5F52AE2E3E5008D1A84 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				C1DCF5DC2AE2D731008D1A84 /* CustomTabBarController.swift */,
-				C17E1FE52AE3A426000FE915 /* BaseTableViewCell.swift */,
+				C1F6CE312AE7E7CF00D18D76 /* Controller */,
+				C1F6CE302AE7E7CC00D18D76 /* ViewModel */,
+				C1F6CE2F2AE7E7C900D18D76 /* View */,
+				C1F6CE2E2AE7E7C500D18D76 /* Model */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -244,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				C17E1FE82AE3B38A000FE915 /* CashboxModel.swift */,
+				C1E188BD2AED07D700E50887 /* CashboxDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,7 +313,8 @@
 		C1DCF5F92AE2E46E008D1A84 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C17E1FE02AE3A373000FE915 /* TableViewCell */,
+				C17E1FE32AE3A3B4000FE915 /* CashboxTableCell.swift */,
+				C184C7DC2AEE4CC000153BD9 /* CashboxTotalAmountView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,8 +322,8 @@
 		C1DCF5FA2AE2E4AE008D1A84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C17E1FEF2AE3E2D2000FE915 /* CustomerDebtModel.swift */,
 				C17E1FED2AE3B82F000FE915 /* DebtModel.swift */,
+				C1A705412AE92AF800903CA7 /* DebtDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +331,9 @@
 		C1DCF5FB2AE2E4B2008D1A84 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C1F6CE352AE7EDA900D18D76 /* DebtTableCell.swift */,
+				C1A7053F2AE927B300903CA7 /* DebtDetailTableCell.swift */,
+				C1A705452AE945BE00903CA7 /* DebtDetailTableFooter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				C1DCF61B2AE2EDF7008D1A84 /* DebtViewModel.swift */,
+				C1A7053D2AE926E700903CA7 /* DebtDetailViewModel.swift */,
+				C1FB7CBA2AE6907B005A1A45 /* AddDebtViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -300,6 +352,8 @@
 			isa = PBXGroup;
 			children = (
 				C1DCF6132AE2EA4E008D1A84 /* DebtViewController.swift */,
+				C1A7053B2AE926D500903CA7 /* DebtDetailViewController.swift */,
+				C1FB7CB82AE69034005A1A45 /* AddDebtViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,7 +361,7 @@
 		C1DCF5FE2AE2E4CB008D1A84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C1DCF6212AE2EE7E008D1A84 /* CustomerModel.swift */,
+				C1F94A4F2AE817C1001D6925 /* CustomerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +369,7 @@
 		C1DCF5FF2AE2E4CE008D1A84 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C1FB7CB02AE66019005A1A45 /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,7 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				C1DCF61D2AE2EE16008D1A84 /* CustomersViewModel.swift */,
-				C17E1FF42AE400A8000FE915 /* AddViewModel.swift */,
+				C17E1FF42AE400A8000FE915 /* AddCustomerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -332,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				C1DCF6152AE2EA80008D1A84 /* CustomersViewController.swift */,
-				C17E1FF22AE40092000FE915 /* AddViewController.swift */,
+				C17E1FF22AE40092000FE915 /* AddCustomerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,6 +395,7 @@
 		C1DCF6022AE2E4DE008D1A84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1F94A5B2AE84B14001D6925 /* SettingsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,6 +403,8 @@
 		C1DCF6032AE2E4E3008D1A84 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C1F94A572AE8468D001D6925 /* SettingsTableHeader.swift */,
+				C1F94A592AE847C4001D6925 /* SettingsTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,6 +442,77 @@
 				C1DCF60C2AE2E56C008D1A84 /* UIView+Stacking.swift */,
 			);
 			path = AnchorKit;
+			sourceTree = "<group>";
+		};
+		C1F6CE2E2AE7E7C500D18D76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1F6CE2F2AE7E7C900D18D76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C17E1FE52AE3A426000FE915 /* BaseTableViewCell.swift */,
+				C1F94A552AE823C4001D6925 /* BaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1F6CE302AE7E7CC00D18D76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1F6CE312AE7E7CF00D18D76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DCF5DC2AE2D731008D1A84 /* CustomTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1F6CE322AE7E84300D18D76 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				C1F6CE332AE7E84E00D18D76 /* UIImage+Ext.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		C1F94A522AE82389001D6925 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C1F94A532AE82396001D6925 /* CustomTextField.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C1FB7CB02AE66019005A1A45 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C1FB7CB12AE66033005A1A45 /* CustomerTableCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		C1FB7CB32AE66582005A1A45 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				C1FB7CB62AE6659F005A1A45 /* UIColor+Ext.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		C1FB7CBC2AE6A033005A1A45 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				C1FB7CBD2AE6A054005A1A45 /* UITextField+Ext.swift */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,31 +585,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A7053E2AE926E700903CA7 /* DebtDetailViewModel.swift in Sources */,
+				C1F94A5C2AE84B14001D6925 /* SettingsModel.swift in Sources */,
 				C17E1FE62AE3A426000FE915 /* BaseTableViewCell.swift in Sources */,
 				C1DCF6142AE2EA4E008D1A84 /* DebtViewController.swift in Sources */,
-				C17E1FF32AE40092000FE915 /* AddViewController.swift in Sources */,
-				C17E1FF52AE400A8000FE915 /* AddViewModel.swift in Sources */,
-				C1DCF6222AE2EE7E008D1A84 /* CustomerModel.swift in Sources */,
+				C1FB7CB22AE66033005A1A45 /* CustomerTableCell.swift in Sources */,
+				C1E188BC2AED013200E50887 /* AnchorKit.swift in Sources */,
+				C17E1FF32AE40092000FE915 /* AddCustomerViewController.swift in Sources */,
+				C17E1FF52AE400A8000FE915 /* AddCustomerViewModel.swift in Sources */,
+				C1E188BE2AED07D700E50887 /* CashboxDataModel.swift in Sources */,
 				C1DCF5DD2AE2D731008D1A84 /* CustomTabBarController.swift in Sources */,
 				C1DCF6182AE2EAA6008D1A84 /* SettingsViewController.swift in Sources */,
+				C1FB7CB92AE69034005A1A45 /* AddDebtViewController.swift in Sources */,
 				C1DCF5D92AE2D731008D1A84 /* AppDelegate.swift in Sources */,
+				C1F94A562AE823C4001D6925 /* BaseView.swift in Sources */,
 				C17E1FE92AE3B38A000FE915 /* CashboxModel.swift in Sources */,
-				C1DCF6102AE2E56C008D1A84 /* UIView+Stacking.swift in Sources */,
+				C1FB7CB72AE6659F005A1A45 /* UIColor+Ext.swift in Sources */,
+				C1E188B92AED013200E50887 /* UIView+Stacking.swift in Sources */,
+				C1A705392AE8FF8300903CA7 /* UIView+Ext.swift in Sources */,
+				C1E188BB2AED013200E50887 /* UIStackView.swift in Sources */,
+				C1F94A5A2AE847C4001D6925 /* SettingsTableCell.swift in Sources */,
 				C1DCF6202AE2EE32008D1A84 /* SettingsViewModel.swift in Sources */,
 				C1DCF5DB2AE2D731008D1A84 /* SceneDelegate.swift in Sources */,
+				C1F6CE362AE7EDA900D18D76 /* DebtTableCell.swift in Sources */,
 				C17E1FE42AE3A3B4000FE915 /* CashboxTableCell.swift in Sources */,
-				C1DCF60D2AE2E56C008D1A84 /* UIStackView.swift in Sources */,
+				C1F6CE342AE7E84E00D18D76 /* UIImage+Ext.swift in Sources */,
+				C1A705462AE945BE00903CA7 /* DebtDetailTableFooter.swift in Sources */,
+				C1F94A502AE817C1001D6925 /* CustomerModel.swift in Sources */,
+				C1FB7CBE2AE6A054005A1A45 /* UITextField+Ext.swift in Sources */,
+				C1F94A542AE82396001D6925 /* CustomTextField.swift in Sources */,
+				C1A705422AE92AF800903CA7 /* DebtDetailModel.swift in Sources */,
+				C184C7DD2AEE4CC000153BD9 /* CashboxTotalAmountView.swift in Sources */,
+				C1F94A582AE8468D001D6925 /* SettingsTableHeader.swift in Sources */,
 				C17E1FDF2AE3A14B000FE915 /* Typealians.swift in Sources */,
+				C1E188BA2AED013200E50887 /* CircleAnimationKit.swift in Sources */,
+				C1FB7CBB2AE6907B005A1A45 /* AddDebtViewModel.swift in Sources */,
 				C1DCF61C2AE2EDF7008D1A84 /* DebtViewModel.swift in Sources */,
 				C17E1FEC2AE3B5DD000FE915 /* Session.swift in Sources */,
 				C1DCF61E2AE2EE16008D1A84 /* CustomersViewModel.swift in Sources */,
 				C1DCF6162AE2EA80008D1A84 /* CustomersViewController.swift in Sources */,
+				C1A7053C2AE926D500903CA7 /* DebtDetailViewController.swift in Sources */,
 				C1DCF6122AE2E5F4008D1A84 /* CashboxViewController.swift in Sources */,
-				C17E1FF02AE3E2D2000FE915 /* CustomerDebtModel.swift in Sources */,
 				C17E1FEE2AE3B82F000FE915 /* DebtModel.swift in Sources */,
 				C1DCF61A2AE2ED21008D1A84 /* CashboxViewModel.swift in Sources */,
-				C1DCF60E2AE2E56C008D1A84 /* CircleAnimationKit.swift in Sources */,
-				C1DCF60F2AE2E56C008D1A84 /* AnchorKit.swift in Sources */,
+				C1A705402AE927B300903CA7 /* DebtDetailTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

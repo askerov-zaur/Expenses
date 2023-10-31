@@ -8,10 +8,8 @@
 import Foundation
 
 struct CashboxModel: Codable  {
-    
-    let currency: String
-    let date: String
-    let amount: Double
-    let totalAmount: Double
-
+    let currency: CurrencyType
+    var data: [CashboxData]
 }
+
+

@@ -16,17 +16,18 @@ class CustomTabBarController: UITabBarController {
     }
     
     private func SetupTabBarViews() {
+        
         let cashbox = UINavigationController(rootViewController: CashboxViewController())
-        cashbox.tabBarItem = UITabBarItem(title: "Kassa", image: UIImage(named: "bag"), selectedImage: UIImage(named: "bag.fill"))
+        cashbox.tabBarItem = UITabBarItem(title: "Kassa", image:.cashbox, selectedImage:.cashboxFill)
         
         let debt = UINavigationController(rootViewController: DebtViewController())
-        debt.tabBarItem = UITabBarItem(title: "Borclar", image: UIImage(systemName: "list.bullet.rectangle"), selectedImage: UIImage(systemName: "list.bullet.rectangle.fill"))
+        debt.tabBarItem = UITabBarItem(title: "Borclar", image: .debt, selectedImage: .debtFill)
         
         let customers = UINavigationController(rootViewController: CustomersViewController())
-        customers.tabBarItem = UITabBarItem(title: "Müştərilər", image: UIImage(systemName: "person.2"), selectedImage: UIImage(systemName: "person.2.fill"))
+        customers.tabBarItem = UITabBarItem(title: "Müştərilər", image: .customers, selectedImage: .customersFill)
         
         let settings = UINavigationController(rootViewController: SettingsViewController())
-        settings.tabBarItem = UITabBarItem(title: "Ayarlar", image: UIImage(systemName: "gearshape"), selectedImage: UIImage(systemName: "gearshape.fill"))
+        settings.tabBarItem = UITabBarItem(title: "Ayarlar", image: .settings, selectedImage: .settingsFill)
         
     viewControllers = [cashbox, debt, customers, settings]
         

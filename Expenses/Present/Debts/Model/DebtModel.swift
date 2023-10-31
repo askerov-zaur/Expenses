@@ -8,10 +8,10 @@
 import Foundation
 
 struct DebtModel: Codable {
-    
-    let currency: String
-    let amount: Double
-    let note: String
-    let totalAmount: Double
-    
+    let fullname: String
+    let id: String
+    var data: [DebtDetailModel]
 }
+
+
+

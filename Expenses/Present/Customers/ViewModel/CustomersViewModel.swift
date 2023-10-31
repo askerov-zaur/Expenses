@@ -9,4 +9,16 @@ import UIKit
 
 class CustomersViewModel {
     
+    private let session: Session
+    
+    init(session: Session) {
+        self.session = session
+    }
+    
+    var getData: [CustomerModel] {
+        return session.customer
+    }
+    
+
+    
 }
