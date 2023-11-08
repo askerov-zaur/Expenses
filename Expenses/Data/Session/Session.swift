@@ -53,19 +53,6 @@ class Session {
         ]),
         
     ]
-    
-    private let settingsArray: [SettingsModel] = [
-        SettingsModel(name: "Profil", icon: "1"),
-        SettingsModel(name: "Statistika", icon: "2"),
-        SettingsModel(name: "Məlumatları göndər", icon: "3"),
-        SettingsModel(name: "Məlumatları sil", icon: "4"),
-        SettingsModel(name: "Pin-i dəyiş", icon: "5"),
-        SettingsModel(name: "İnteqrasiya təklifləri", icon: "6"),
-        SettingsModel(name: "iyanə", icon: "7"),
-        SettingsModel(name: "Report et", icon: "8"),
-        SettingsModel(name: "Haqqında", icon: "9"),
-    ]
-    
 }
 
 //for read
@@ -89,10 +76,6 @@ extension Session {
     
     var debtDetailModel: [DebtDetailModel] {
         return debtArray[debtIndex].data
-    }
-    
-    var settingModel: [SettingsModel] {
-        return settingsArray
     }
     
 }

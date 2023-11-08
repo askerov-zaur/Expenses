@@ -1,5 +1,5 @@
 //
-//  UIView+Ext.swift
+//  CurrencyType.swift
 //  Expenses
 //
 //  Created by Zaur Askerov on 08.11.23.
